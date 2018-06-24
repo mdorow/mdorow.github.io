@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Links Intro</title>
+    </head>
+
+    <body>
+        <!-- Links can be used for many purposes                            -->
+        <!--    Use the a element to specify that anything in between the   -->
+        <!--     tags is part of a link                                     -->
+        <!--    The href attribute of the a element specifies where the     -->
+        <!--     link is to                                                 -->
+        <h1 id="top">Links can do more than just route the user to another page</h1>
+
+        <p>Links can do the following:</p>
+        <ul>
+            <!-- External websites are linked to by using the address as    -->
+            <!--  href value - Use the full/absolute address                -->
+            <!--    External pages are usually opened in a new window       -->
+            <!--        To open in a new window use the target attribute    -->
+            <!--         with the value "_blank"                            -->
+            <li>Link to an external website
+                <ul>
+                    <li><a href="https://mdorow.github.io" target="_blank">home</a></li>
+                </ul>
+            </li>
+
+            <!-- Local pages can be linked by using their relative URL or   -->
+            <!--  their path on the machine relative to the current file    -->
+            <!--    The top-level folder (where index.html lives) is the    -->
+            <!--     root directory                                         -->
+            <!--    A folder one below root is a child of root and one      -->
+            <!--     below that would be a grandchild of root               -->
+            <!--    Each main file in a subdirectory should be named        -->
+            <!--     index.html                                             -->
+            <!--    URL: Uniform Resource Locator                           -->
+            <!--        The URL links to the main index.html file of a site -->
+            <!--         and from there the site uses its file structure to -->
+            <!--         link pages together                                -->
+            <!--        Local links use the same format as Unix machines    -->
+            <li>Link to another local page
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                </ul>
+            </li>
+
+            <!-- To link to another part of the same page the id attribute  -->
+            <!--  (which can be used on any type of element) must be used   -->
+            <!--    The id attribute value should start with a letter or _  -->
+            <!--    No two attributes on the same page should have the same -->
+            <!--     value                                                  -->
+            <!-- To link to an element use "#<id>" as the href link         -->
+            <li>Link to another part of the same page
+                <ul>
+                    <li><a href="#bottom">Bottom of Page</a></li>
+                </ul>
+            </li>
+            
+            <!-- You can also combine the two methods to link to a specific -->
+            <!--  part of another page                                      -->
+            <li>Link to another part of the same page
+                <ul>
+                    <li><a href="links.html#bottom">Bottom of Page</a></li>
+                </ul>
+            </li>
+            
+            <!-- Links can be used to open up the user's default mail       -->
+            <!--  program as well                                           -->
+            <!--    The href attribute must start with the keyword "mailto" -->
+            <!--     to specify an email link, followed by the address to   -->
+            <!--     send to                                                -->
+            <li>Link to open an email
+                <ul>
+                    <li><a href="mailto:matthewdorow@gmail.com">Email Sudo Root User</a></li>
+                </ul>
+            </li>
+            
+            <li>etc.</li>
+        </ul>
+
+        <!-- Bottom of page                                                 -->
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <!-- Link back up to top of page                                    -->
+        <p id="bottom"><a href="#top">Back to Top</a></p>
+
+        <!-- Link to summary                                                -->
+        <p><a href="links_summary.html">Links Summary</a></p>
+    </body>
+</html>

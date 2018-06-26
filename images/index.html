@@ -1,9 +1,89 @@
+<!-- Images are usually all grouped in a single images folder in the root   -->
+<!--    directory                                                           -->
+<!--   Within the images directory there are often subdirectories for the   -->
+<!--     different types of images (logos, images, etc.) for the site       -->
+
 <html>
     <head>
         <title>Images</title>
     </head>
 
     <body>
-        <!-- CONTINUE HERE -->
+        <!-- The img element is used to add images to a site                -->
+        <!--   The img is an empty element which means that it does not     -->
+        <!--       have a closing tag (just <img attributes />)             -->
+        <!--   The img element must contain at least the two following      -->
+        <!--       attributes                                               -->
+        <!--     The src attribute contains the relative URL to where the   -->
+        <!--         images lives locally                                   -->
+        <!--     The alt attribute provides a text description of the image -->
+        <!--       If the image doesn't have any meaning to the page then   -->
+        <!--           the alt element should be used but left blank        -->
+        <!--     The title attribute can also be used and is usually what   -->
+        <!--         is displayed when hovering over the image              -->
+        <img src    = "images/umich.png"
+             alt    = "A yellow logo of the University of Michigan"
+             title  = "The University of Michigan"
+        />
+
+        <!-- The image dimensions can also be specified using the height    -->
+        <!--     and width attributes                                       -->
+        <!--   This is important because if the image is slow to load the   -->
+        <!--       structure of the page is still correct before the page   -->
+        <!--       loads                                                    -->
+        <!--   These attributes will distort the image dimensions if        -->
+        <!--       specified that way                                       -->
+        <img src    = "images/umich.png"
+             alt    = "A yellow logo of the University of Michigan"
+             title  = "The University of Michigan"
+             height = "400"
+             width  = "100"
+        />
+
+        <br />
+
+        <!-- Image alignment: The location of the image depends on its      -->
+        <!--     location relative to other elements (such as paragraphs)   -->
+        <!--   This is because the img element is an inline element while   -->
+        <!--       paragraph element is a block element which always start  -->
+        <!--       on a newline                                             -->
+
+        <!--   Image is Before Paragraph: Text starts on line after image   -->
+        <img src    = "images/umich.png"
+             alt    = "A yellow logo of the University of Michigan"
+             title  = "The University of Michigan"
+             height = "50"
+             width  = "50"
+        />
+        <p>Image is Before Paragraph</p>
+
+        <!--   Image is Inside Start of Paragraph: Text is inline with the  -->
+        <!--       bottom of the image on the right side of the image       -->
+        <p>
+            <img src    = "images/umich.png"
+                 alt    = "A yellow logo of the University of Michigan"
+                 title  = "The University of Michigan"
+                 height = "50"
+                 width  = "50"
+            />
+            Image is Inside Start of Paragraph
+        </p>
+
+        <!--   Image is Inside Middle of Paragraph: Text is inline with     -->
+        <!--       the bottom of the image with the image in between the    -->
+        <!--       text as specified                                        -->
+        <p>
+            Image is Inside
+            <img src    = "images/umich.png"
+                 alt    = "A yellow logo of the University of Michigan"
+                 title  = "The University of Michigan"
+                 height = "50"
+                 width  = "50"
+            />
+            Middle of Paragraph
+        </p>
+
+        <!-- Link to image alignment                                        -->
+        <p><a href="image_alignment.html">image_alignment</a></p>
     </body>
 </html>

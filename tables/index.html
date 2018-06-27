@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <!-- Table elements are made using the table element                -->
+        <!--   The tr element is used to specify a row within a table       -->
+        <!--     tr ~ Table Row                                             -->
+        <!--   The td element is used to specify a data element within a    -->
+        <!--       row                                                      -->
+        <!--     td ~ Table Data                                            -->
+        <!--   The th element is used to specify a table header             -->
+        <!--     th ~ Table Header                                          -->
+        <!--     Headings are usually bolded and centered                   -->
+        <!--     The scope attribute can be used to specify whether it is   -->
+        <!--         header for a row or a column                           -->
+        <!--     Using table headers can help search engines index a table  -->
+        <!-- The colspan and rowspan attributes of th and td elements can   -->
+        <!--     be used to span a cell across multiple spots               -->
+        <!--   These two cannot be used together to create an L shaped cell -->
+        <p>Multiplication Table
+        <table>
+            <tr>
+                <th> </th>
+                <th scope="col">0</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+            </tr>
+            <tr>
+                <th scope="row">0</th>
+                <td colspan="3">0</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td rowspan="2">0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+        </table>
+
+        <!-- Link to another table                                          -->
+        <p><a href="another_table.html">another_table</a></p>
+    </body>
+</html>

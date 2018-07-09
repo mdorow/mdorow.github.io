@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Table Summary</title>
+    </head>
+
+    <body>
+        <!-- The table element is used to make tables                       -->
+        <!--   Tables are split into the head, body, and foot               -->
+        <!--   Tables are also split into rows                              -->
+        <!--       Within a row each cell is either a header (th) or data   -->
+        <!--           value (td)                                           -->
+        <!--   The border, cellpadding, and cellspacing attributes are      -->
+        <!--       outdated but can be used to style a chart                -->
+        <table cellpadding="5"
+            cellspacing="5"
+            border=1">
+            <thead>
+                <tr>
+                    <!-- The colspan attribute is used to span cells across -->
+                    <!--     multiple columns                               -->
+                    <!-- The rowspan attribute is used to span cells across -->
+                    <!--     multiple rows                                  -->
+                    <th colspan="2">2018 Matchup</th>
+                </tr>
+                <tr>
+                    <!-- The scope attribute can be used to specify whether -->
+                    <!--     a header is for a row or a column              -->
+                    <!-- The bgcolor attribute is outdated but can be used  -->
+                    <!--     to add color to a data cell in a table         -->
+                    <th scope   = "col"
+                        width   = "420"
+                        bgcolor = "#FFCB05">
+                        University of Michigan
+                    </th>
+                    <th scope   = "col"
+                        width   = "420"
+                        bgcolor = "#AE9142">
+                        Notre Dame
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>
+                        <img src   = "images/umich.jpg"
+                            alt    = "A yellow logo of the University of Michigan"
+                            title  = "The University of Michigan"
+                            height = "300"
+                            width  = "300"
+                        />
+                    </th>
+                    <th>
+                        <img src    = "images/notre_dame.jpg"
+                            alt    = "The University of Notre Dame Logo"
+                            title  = "The University of Notre Dame"
+                            height = "300"
+                            width  = "400"
+                        />
+                    </th>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>100</td>
+                    <td>0</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Link back to index                                             -->
+        <p><a href="../index.html">../index.html</a></p>
+    </body>
+</html>
